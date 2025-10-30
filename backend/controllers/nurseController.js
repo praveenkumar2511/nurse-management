@@ -33,7 +33,7 @@ const pool = require("../db")
 //   }
 // };
 
-export const getNurses = async (req, res) => {
+const getNurses = async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
